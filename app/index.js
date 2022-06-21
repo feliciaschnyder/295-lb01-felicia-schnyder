@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 mongoose.Promise = global.Promise;
-const connectionUrl = "mongodb://localhost/repair";
+const connectionUrl = "mongodb://repairUser:insecureTest$55@localhost:27017/repair";
 mongoose.connect(connectionUrl, {});
 
 //import routes
